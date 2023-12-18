@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Encoding translates numbers into binary. Character sets translates characters to numbers.-->
+    <meta charset="utf-8">
+	 <!--The http-equiv attribute provides an HTTP header for the information/value of the content attribute.-->
+	 <meta http-equiv="X-UA-compatible" Content="IE-edge">
+	 <meta name="description" content="Nagarathna Srikantaiah Paramedical College Bangalore">
+	 <meta name="keywords" content="Nagarathna Srikantaiah Paramedical">
+	 <meta name="author" content="Chandrashekara S">
+	 <meta name="viewport" content="width=devise-width ,initial-scale=1,shrink-to-fit=no">
+	 <meta name="format-detaction" content="telephone=no" name="format-detection">
+	 <title>NSPC Education</title>
+	 <!--Slide show-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     <!--Adding style to content-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+    <!--Create style sheet our needs-->
+	<link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+
+     <!--Auto style to font-->
+    <link rel="stylesheet" href="assets/font/css/font-awesome.min.css">
+
+    <!--Tooltip.js can create Dropdown, show, hide and toggle tooltips.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+   <!--Slick slider Fade Zoom for Groups-->
+    <link rel="stylesheet" href="assets/slick-slider/slick.css">
+    <link rel="stylesheet" href="assets/slick-slider/slick-theme.css">
+	
+	<!--reCATCHA v2 for email spam control-->
+	<script src="https://www.google.com/recaptcha/api.js"async defer></script>
+	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	 
+	 
+	<!--<script type="text/javascript">
+	var onloadCallback=function(){
+	alert("grecsptcha is ready")
+	};
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>-->
+	
+	
+<style>
+   .frm {
+         border:2px solid gray;
+         width:70%;
+         height:5%;
+         background-color:#E6E6FA;
+         position:relative;
+		 margin:0px 5px 0px 5px;
+         left:15%;
+		 padding:10px 25px 10px 25px;
+	    }
+</style>
+	
+</head>
+
+<body>
+<!--Start Body part-->
+<section class="case_w3ls py-lg-1 groups_area">
+    <div class="container py-5">
+	    <div class="text-center wthree-title pb-sm-5 pb-3">
+             <h3 class="w3l-sub">Paramedical Course Admission Form</h3>
+			 <h6 style="color:#dc3545;"><em>(Nagarathna Srikantiah Paramedical College Bangalore)</em></h6>
+		</div>
+	<form action="contact/mail1.php" class="frm" method="post">
+		<div class="form-row">
+			<div class="form-sub row">
+			    <label for="validation">Name * :</label>
+			        <div class="col-md-3 col-xs-12 mb-3">
+					     <input type="text" class="form-control is-valid" id="validation01" name="name" pattern="[a-zA-z]{3,50}" required="required">
+				         <label for="validation01">First Name</label>     
+					    <!--<div class="valid-feedback">Looks Good</div>-->
+				    </div>
+					<div class="col-md-3 col-xs-12 mb-3">
+					   <input type="text" class="form-control is-valid" id="validation02" name="mname">
+					   <label for="validation02">Middle Name</label>
+					   <!--<div class="valid-feedback">Looks Good</div>-->
+					</div>
+					<div class="col-md-3 col-xs-12 mb-3">
+					   <input type="text" class="form-control is-valid" id="validation03" name="lname">
+					   <label for="validation03">Last Name</label>
+					   <!--<div class="valid-feedback">Looks Good</div>-->
+					</div>
+				
+                    <div class="col-md-4 col-xs-12 mb-3">
+					<label for="date-input">Birth Date * :</label>
+					    <input type="date" class="form-control is-valid" id="validation04" name="bdate"  value="yyyy-mm-dd" required="required">
+						<!--<label for="validation04">D M Y</label>
+						<div class="valid-feedback">Looks Good</div>-->
+                    </div>  
+                    <div class="col-md-4 col-xs-12 mb-3">
+					    <label for="gender-select">Gender * :</label>
+						 <select class="custom-select mb-2" id="inlineFormCustomSelect" name="gender" required="required">
+						    <option selected>Gender</option>
+						    <option value="male">Male</option>
+						    <option value="female">Female</option>
+						    <option value="other">Other</option>
+							<!--<label for="validation05">Gender</label>
+                            <div class="valid-feedback">Looks Good</div>-->							
+						 </select>
+                    </div>	
+				</div>	
+				
+		<div class="col-md-12 col-xs-12 mb-3">	
+            <label for="apply-radio">Applying for *:</label>
+            		
+			<div class="form-check">
+                 <input type="radio" class="form-check-input" id="radio1" name="applying" value="DMLT" required="required"/>
+                     <label class="form-check-label" id="radio1" for="radio1">DMLT</label><br>
+            <!--</div>-->
+		
+			<!--<div class="form-check">-->
+                 <input type="radio" class="form-check-input" id="radio2" name="applying" value="DMXT" required="required"/>
+                     <label class="form-check-label" for="radio2">DMXT</label>
+            </div>
+        </div>
+		
+		<div class="col-md-12 col-xs-12 mb-3">	
+        <label for="apply-radio">Educational Qualification  *:</label>		
+			 <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3" name="optradio1" value="SSLC (10th std)" required="required">  
+                <label class="form-check-label" id="radio3" for="radio3">SSLC (10th std)</label><br>      					
+            <!--</div>-->
+            <!--<div class="form-check">-->
+                <input type="radio" class="form-check-input" id="radio4" name="optradio1" value="II PUC(12th std)" required="required">
+                <label class="form-check-label" id="radio4" for="radio4">II PUC (12th std)</label><br>
+            </div>
+        </div>
+		
+		
+		<!--<div class="col-md-12 col-xs-12 mb-3">
+		     <label for="apply-radio">Educational Qualification *:</label>
+			    
+				<div class="form-check">
+				    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="SSLC (10th std)"> SSLC (10th std)<br>
+					     <label class="form-check-input" for="radio1">
+					<input type="radio" class="form-check-input" id="radio2" name="optradio" value="II PUC(12th std)"> II PUC (12th std)	 
+					
+			    </div>
+		</div>-->
+		
+		
+		
+		<div class="col-md-12 col-xs-12 mb-3">	
+		    <label for="apply-number">Mobile Number *:</label>
+                 <input type="text" class="form-control is-valid" id="validation05" name="number"  pattern="[1-9]{1}[0-9]{9}" required="required"> 			
+		     
+		</div>
+		<div class="col-md-12 col-xs-12 mb-3">	
+		    <label for="apply-email">Email Address *:</label>
+                 <input type="text" class="form-control is-valid" id="validation06" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,4}$" required="required"> 				     
+		</div>
+		<div class="col-md-12 col-xs-12 mb-3">	
+		    <label for="apply-address">Correspondence Address *:</label>
+                 <input type="text" class="form-control is-valid" id="validation07" name="place1"  pattern="([a-zA-Z0-9]| |/|\\|@|#|$|%|&)+" required="required"> 			
+		     
+		</div>
+		<div class="col-md-12 col-xs-12 mb-3">	
+		    <label for="apply-address">Permanent Address *:</label>
+                 <input type="text" class="form-control is-valid" id="validation08" name="place2"  pattern="([a-zA-Z0-9]| |/|\\|@|#|$|%|&)+" required="required"> 			
+		     
+		</div>
+		<div class="col-md-6 col-xs-12 mb-3">	
+		    <label for="apply-address">City *:</label>
+                 <input type="text" class="form-control is-valid" id="validation09" name="city"  pattern="[a-zA-Z]{3,50}" required="required"> 			
+		     
+		</div>
+		<div class="col-md-6 col-xs-12 mb-3">	
+		    <label for="apply-address">State/Province *:</label>
+                 <input type="text" class="form-control is-valid" id="validation10" name="state"  pattern="[a-zA-Z]{3,50}" required="required"> 			
+		     
+		</div>
+		<div class="col-md-6 col-xs-12 mb-3">	
+		    <label for="apply-address">Postal/Zip Code *:</label>
+                 <input type="number" class="form-control is-valid" id="validation11" name="postal"  required="required"> 			
+		     
+		</div>
+		<div class="col-md-6 col-xs-12 mb-3">	
+		    <label for="apply-address">Country *:</label>
+                <!--<select class="custom-select mb-2" id="inlineFormCustomSelect">
+                 <option selected>Country</option> </select>-->
+				<input type="text" class="form-control is-valid" id="validation12" name="country"  pattern="[a-zA-Z]{3,50}" required="required">         				 
+		</div>
+		<div class="col-md-12 col-xs-12 mb-3 mb-3">
+		<!--reCAPTCHA start-->
+        <!--<div class="g-recaptcha" data-sitekey="6Lf-dckUAAAAAPjMSKVEpLW7dNTPkkWohSBTrTAb" data-secretkey="6Lf-dckUAAAAAFnEoLCBbB2dvUG9ZX2fGtNkLjGr" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback" required="required" /></div>
+        <!--<input type="text" class="form-control is-valid" data-recaptcha="true" required data-error="Please complete the Captcha">-->
+        <!--<div class="help-block with-errors"></div>-->
+
+         <!--<div class="g-recaptcha" data-sitekey="6Lf-dckUAAAAAPjMSKVEpLW7dNTPkkWohSBTrTAb"data-secretkey="6Lf-dckUAAAAAFnEoLCBbB2dvUG9ZX2fGtNkLjGr" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>-->
+
+	
+							  
+			  <div class="g-recaptcha" data-sitekey="6Lf-dckUAAAAAPjMSKVEpLW7dNTPkkWohSBTrTAb"></div>
+								
+        		
+        <!--End reCAPTCHA-->
+		<br><br>
+		<!--<button type="submit" value="Submit" class="btn btn-primary mr-5">Submit</button>-->
+		
+		<button type="submit" onclick="checkRecaptcha();" class="btn btn-primary" required/>Submit</button>   
+		
+		<button type="reset" value="Reset" class="btn btn-danger">Cancel</button>
+          </div>     		
+		</form>
+		
+		<!--Start Js reCaptcha-->
+                     <script> 
+                        function checkRecaptcha() {
+                            var response = grecaptcha.getResponse();
+                                if(response.length == 0) { 
+                                    //reCaptcha not verified
+                                         alert("no pass"); 
+                                }
+                                else { 
+                          //reCaptch verified
+                           alert("pass"); 
+                          }
+                        }
+                   // implement on the backend
+                     function backend_API_challenge() {
+                        var response = grecaptcha.getResponse();
+                           $.ajax({
+                                   type: "POST",
+                                   url: 'https://www.google.com/recaptcha/api/siteverify',
+                                   data: {"secret" : "6Lf-dckUAAAAAPjMSKVEpLW7dNTPkkWohSBTrTAb", "response" : response, "remoteip":"localhost"},
+                                   contentType: 'application/x-www-form-urlencoded',
+                                   success: function(data) { console.log(data); }
+                                 });
+                                }
+                         </script>
+						 
+					<!--End reCaptcha-->	 
+	
+		
+	</div>
+</section>
+
+<!--End Body part-->
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+
+  <!--Bootstrap4 multiple slide by slide and Dropdown menu-->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+  <!--Slick slider Fade Zoom for courses-->
+  <script src="assets/slick-slider/slick.min.js"></script>            
+
+</body>
+</head>
+</html>

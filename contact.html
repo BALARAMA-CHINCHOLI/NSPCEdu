@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-compatible" Content="IE-edge">
+     <meta name="description" content="Nagaratna Shrikantiah Paramedical College Bangalore">
+    <meta name="keywords" content="Nagaratna paramedical college">
+    <meta name="author" content="Chandrashekara S">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no" name="format-detection">
+    <title>NSPCEducation</title>
+  
+  <!--reCATCHA v2 for email spam control-->\
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  
+  <script src="https://www.google.com/recaptcha/api.js"async defer></script>
+  
+    <!--Fevicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/nspcLog.jpg"/>
+    
+    <!--Slide show-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     <!--Adding style to content-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+    <!--Create style sheet our needs-->
+    <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+
+     <!--Auto style to font-->
+    <link rel="stylesheet" href="assets/font/css/font-awesome.min.css">
+
+    <!--Tooltip.js can create Dropdown, show, hide and toggle tooltips.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+   <!--Slick slider Fade Zoom for Groups-->
+    <link rel="stylesheet" href="assets/slick-slider/slick.css">
+    <link rel="stylesheet" href="assets/slick-slider/slick-theme.css">  
+        <style>
+            .frm{
+                 border:2px solid gray;
+                 /*width:50%;
+                 height:5%;*/
+                 background-image: linear-gradient(to right, darkred , #3e96a9);
+                 position:relative;
+             margin:0px 5px 0px 5px;
+             padding:15px 40px 25px 40px;
+             color:white;
+                 border-radius:20px;
+               }
+       </style>
+     
+
+<script>
+// Defining a function to display error message
+function printError(elemId, hintMsg) 
+{
+    document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+// Defining a function to validate form 
+function validateForm() 
+    {
+    // Retrieving the values of form elements 
+    var name = document.contactForm.name.value;
+    var email_addr = document.contactForm.email_addr.value;
+    var mobile = document.contactForm.mobile.value;
+    var message = document.contactForm.message.value;
+    var recaptcha=document.contactForm.recaptcha.value;
+  
+  // Defining error variables with a default value
+    var nameErr = email_addrErr = mobileErr = messageErr = recaptchaErr = true;
+    
+    // Validate name
+    if(name == "") 
+    {
+        printError("nameErr", "Please enter your name");
+    } 
+    else
+    {
+           var regex = /^[a-zA-Z\s]+$/;                
+        if(regex.test(name) === false) 
+        {
+            printError("nameErr", "Please enter a valid name");
+        } else
+        {
+            printError("nameErr", "");
+            nameErr = false;
+        }
+     }
+    
+    // Validate email_addr address
+    if(email_addr == "")
+    {
+        printError("email_addrErr", "Please enter your address");
+    }
+     else 
+    {
+        // Regular expression for basic email_addr validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if(regex.test(email_addr) === false) 
+    {
+            printError("email_addrErr", "Please enter a valid email address");
+        } else
+    {
+            printError("email_addrErr", "");
+            email_addrErr = false;
+        }
+    }
+    
+    // Validate mobile number
+    if(mobile == "") 
+  {
+        printError("mobileErr", "Please enter your mobile number");
+    } 
+  else 
+  {
+        var regex = /^[1-9]\d{9}$/;
+        if(regex.test(mobile) === false) 
+    {
+            printError("mobileErr", "Please enter a valid 10 digit mobile number");
+        }
+    else
+    {
+            printError("mobileErr", "");
+            mobileErr = false;
+        }
+    }
+    
+   //Validate message
+    if(message == "") {
+        printError("messageErr", "Please reply");
+    } else {
+        printError("messageErr", "");
+        messageErr = false;
+    }
+  
+  
+  //Validate recaptcha
+  if(recaptcha == ""){
+       printError("recaptchaErr","Please check");
+  }else{
+       printError("recaptchaErr","");
+     recaptchaErr = false;
+  }
+    
+    
+    // Prevent the from being submitted if there are any errors
+    if((nameErr || email_addrErr || mobileErr|| messageErr || recaptchaErr) == true) {
+       return false;
+    } else {
+        // Creating a string from input data for preview
+        var dataPreview = "You've entered the following details: \n" +
+                          "Full Name: " + name + "\n" +
+                          "Email Address: " + email_addr + "\n" +
+                          "Mobile Number: " + mobile + "\n" +
+                          "Message: " + message + "\n" +
+              "reCaptcha: " + recaptcha + "\n";
+        // Display input data in a dialog box before submitting the form
+        alert(dataPreview);
+    }
+};
+</script>
+
+
+</head>
+ <body>
+    <!--Start header point-->   
+<section class="case_w3ls top_bar"> 
+  <div class="container-fluid">   
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <a href="#" class="social_icons"><i class= "fa fa-facebook-square" style="font-size:23px; color:#fff;"></i></a>
+          <a href="#" class="social_icons"><i class= "fa fa-twitter-square" style="font-size:23px; color:#fff;"></i></a>
+          <a href="#" class="social_icons"><i class= "fa fa-youtube-square" style="font-size:23px; color:#fff;"></i></a>
+          <a href="#" class="social_icons"><i class= "fa fa-google-plus-square" style="font-size:23px; color:#fff;"></i></a>     
+        </div>
+
+        <div class="col-md-9 col-sm-9 col-xs-12 text-right contact_info">
+          <a href="#"><span class="glyphicon glyphicon-envelope"></span> Email Id:chanrenspc@gmail.com</a>
+          <a href="#"><span class="glyphicon glyphicon-earphone"></span> Phone:080-40810638.</a>                            
+        </div>                     
+      </div><!--End of row--> 
+    </div><!--End of container-->  
+  </div><!--End of container-fluid--> 
+</section> 
+<!--End Header Point-->
+
+<!--Start header-below-->
+<section class="case_w3ls top_barbelow">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">                    
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <img class="responsive" src="assets/image/nspcLog.jpg" alt="nspcLog" style="width:40%" "height:100%"/>
+        </div><!--end of logo-->
+
+        <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+          <h5 class="w3l-sub">Nagarathna Srikantiah <br>Paramedical College (NSPC) Bangalore</h5>
+        </div><!--Ens of College Name-->   
+        <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+          <img class="responsive" src="assets/image/admission9.jpg" alt="admission9" style="width:25%" "height:100%">
+          <span><a href="form.html">Click Here to Apply</a></span>
+        </div><!--End of Click Admission-->   
+      </div>
+    </div>
+  </div>
+</section>       
+<!--End of header below-->       
+
+
+<!--navigation Start-->
+<section class="case_w3ls navbar-expan-lg">
+    <div class="container-fluid">
+       <div class="row">
+        <div class="col-md-12 col-sm-12 text-justify">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light justify-content-center" style="background-color:#fff;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                 <a class="nav-link" href="index.html">Home</a>
+                            </li> 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" href="navbarDropdownMenulink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="history.html">History</a> 
+                                             <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="founder.html">Foundation</a>
+                                             <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="vision.html">Vision, Mission & Quality Policy</a>
+                                            <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="objective.html">Objectives</a>
+                                    </div> 
+                             </li>
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expended="false">Courses</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                         <a class="dropdown-item" href="dmlt.html">DMLT</a>
+                                             <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="xmlt.html">DMXT</a>
+                                     </div>  
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="facility.html">Facility and Affiliation</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us<span class="sr-only">(current)</span></a></li>
+                        </ul>
+                    </div>
+          </nav>
+            </div>
+        </div>
+    </div>                      
+</section>  
+<!--End of Navigation-->
+
+  <!--Start slider-->
+<section class="case_w3ls py-lg-1">
+  <div class="breadcumb-overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex mb-3 bg-secondary">                        
+              <div class="img"><img src="assets/image/contact1.jpeg"alt="contact1"style="width:100%" "height:5%" rotate="90"></div>
+            </div>                   
+        </div>
+    </div>    
+</section>    
+<!--Start of NSPC-->
+<section class="programms"> 
+    <div class="jumbotron">
+        <div class="programms-1 py-lg-1">
+          <div class="container py-1">
+            <div class="text-center wthree-title pb-sm-5 pb-3">
+              <h3 class="w3l-sub">Contact Us</h3>
+        <h4 style="color:#dc3545"><em>Get in touch with us</em></h4>
+            </div>                 
+                  <!--Display success and error message-->
+          <!--<div id="form-message"></div>-->
+            <form name="contactForm" onsubmit="return validateForm()" action="contact/mail2.php" class="frm" method="POST">
+          <div class="form-row">  
+              <div class="col-md-5 col-xs-12 mb-3">
+                    <div class="row mr-5">              
+                    <label>Your Name</label>
+                  <input type="text" class="form-control"  name="name"  placeholder="Your Name">
+                  <div class="error" id="nameErr"></div>   
+                             </div>              
+                <div class="row mr-5">      
+                <label>Email Id</label>
+                   <input type="text" class="form-control"  name="email_addr"  placeholder="Email Id">
+                   <div class="error" id="email_addrErr"></div>
+                            </div>
+                <div class="row mr-5">    
+                 <label>Mobile Number</label>
+                    <input type="text" class="form-control"  name="mobile" placeholder="Mobile Number"  maxlength="10">
+                        <div class="error" id="mobileErr"></div>
+                  </div>
+              </div>
+                        <div class="col-md-7 col-xs-12 mb-3">       
+                <div class="row ">
+                     <label>Message</label>
+                  <textarea class="form-control" rows="7"  name="message" data-error="Please,leave us message"></textarea>                
+                   <div class="error" id="messageErr"></div>
+                             </div>   
+                <br>  
+                            <div class="row">
+                <div class="g-recaptcha" data-sitekey="6Lf-dckUAAAAAPjMSKVEpLW7dNTPkkWohSBTrTAb" data-callback="verifyRecaptchaCallback"data-expired-callback="expiredRecaptchaCallback"></div>
+                  <input type="text" class="form-control" name="recaptcha" data-recaptcha="true" data-error="Please complete the Captcha">
+                <div class="error" id="recaptchaErr"></div>
+              </div>
+               <br>
+                                          
+                                     <input type="submit" class="btn btn-primary mr-5" value="Submit">  
+                        </div>    
+                            
+               <!--Start reCAPTCHA--> 
+               <br><br>
+                <!--<div class="g-recaptcha" data-sitekey="6Lf-dckUAAAAAPjMSKVEpLW7dNTPkkWohSBTrTAb" required/></div>-->
+              
+                  <!--End reCAPTCHA-->
+                          
+                 
+                <!--<button type="submit"  class="btn btn-primary">Submit</button>-->
+
+                                  <!--<button type="submit" onclick="checkRecaptcha();" class="btn btn-primary" required/>Submit</button>-->                                 
+                 
+                <!--<button type="submit" id="onSubmit" class="btn btn-primary">Submit</button>-->
+            </div>      
+            </form>    
+        
+        
+                    <!--<script> 
+           
+              //Set up an event listener for the contact form.
+                          $(form).submit(function(event) {
+                        // Stop the browser from submitting the form.
+                           event.preventDefault();
+                        // TODO
+                        });
+                    </script>-->
+          
+          <!--<script type="text/javascript">
+           function validation()  {
+                                var form_name=document.getElementById('form_name').value;  
+                                      var form_email=document.getElementById('form_email').value;  
+                     var form_phone=document.getElementById('form_phone').value;  
+                      var form_message=document.getElementById('form_message').value; 
+                    
+                    if(form_name==""){
+                                document.getElementById('username').innerHTML="** please fill the name field";
+                          return false;
+                                }                                               
+                          
+                    if((form_name.length<=2)||(form_name.length>20)){
+                    
+                    document.getElementById('username').innerHTML="**User length must be between 2 and 20";
+                                            return false;                   
+                    }
+                                        if(!isNaN(form_name)){
+                         document.getElementById('username').innerHTML=" ** only alphabets allowed";
+                       return false;
+                    } 
+                    
+                    
+                    if(form_email == ""){
+                                document.getElementById('email').innerHTML="** please fill the user e-mail field";
+                          return false;
+                                } 
+                          
+                   if(form_email.indexOf('@') <= 0){
+                                document.getElementById('email').innerHTML ="** @ Invalid Position";
+                          return false;
+                                } 
+                  if((form_email.charAt(form_email.length-4)!='.') && (form_email.charAt(form_email.length-3)!='.')){
+                                document.getElementById('email').innerHTML ="** @ Invalid Position";
+                          return false;
+                                }
+                    
+                    
+                    
+                    if(form_phone==""){
+                                document.getElementById('phone').innerHTML="** please fill the user mobile number field";
+                          return false;
+                                } 
+                          
+                   if(isNaN(form_phone)){
+                               document.getElementById('phone').innerHTML=" ** Mobile number must be 10 digit only";
+                         return false;
+                   }
+                   if(form_phone.length!=10){
+                              document.getElementById('phone').innerHTML=" ** Mobile Number must be 10 digits only";
+                      return false; 
+                   }
+                   
+                   
+                   f(form_message==""){
+                                document.getElementById('message').innerHTML="** please fill the message field";
+                          return false;
+                                }                             
+                    
+          </script>-->
+          
+        
+        <br>
+               <div class="container-fluid">
+              <div class="form-row">    
+                    <div class="col-md-8 col-xs-12 mb-3">         
+                <div class="map-responsive">
+                            <iframe width="667" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Chanre+Diagnostic+Laboratory,+Malleswaram,+Bangalore,+Karnataka,+India&amp;aq=1&amp;oq=chanre&amp;sll=37.0625,-95.677068&amp;sspn=33.352165,35.419922&amp;ie=UTF8&amp;hq=Chanre+Diagnostic+Laboratory,&amp;hnear=Malleswaram,+Bangalore,+Bangalore+Urban,+Karnataka,+India&amp;t=m&amp;ll=12.999205,77.569656&amp;spn=0.013381,0.041456&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>         
+              </div>
+          </div>  
+            <div class="col-md-4 col-xs-12">
+            <h5 style="color:#dc3545;">Quick Contact</h5>
+                <p>NSPC No: # 121/1, 3rd Main Road,<br>  
+                 Between 10th & 11th Cross,Margosa Road,<br> 
+                 Malleshwaram,Bangalore - 560003</p>
+                <a href="chanrenspc@gmail.com"><span class="glyphicon glyphicon-envelope"></span>Email:chanrenspc@gmail.com</a><br><br> 
+                             <span class="glyphicon glyphicon-earphone"></span>Phone:080 40810638.                  
+          </div>
+            </div>  
+                </div>
+            </div>   
+        </div>   
+    </div>    
+</section>           
+
+<!--Start of footer-->
+<section class="footer">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="footer-1 py-lg-1">
+            <div class="container py-1">
+                <div class="row">
+                    <div class="col-lg-3 col-md-8">
+                        <h6 class="footer-title"><strong>QUICK LINKS</strong></h6>                    
+                            <p><a href="index.html">Home</a><br>
+                                <a href="history.html">About Us</a><br>
+                                <!--<a href="#">Admission</a><br>
+                                <a href="elgibility.html">Eligibility</a><br>
+                                <a href="academics.html">Academics</a><br>
+                                <a href="#">Examination</a><br>-->
+                                <a href="facility.html">Facilities and Scope</a><br>
+                                <a href="contact.html">Contact Us</a><br>
+                            </p> 
+                    </div>    
+
+                    <div class="col-lg-3 col-md-8">
+                      <h6 class="footer-title"><strong>DEPARTMENTS</strong></h6>
+                        <p><a href="dmlt.html">DMLT</a><br>
+                            <a href="xmlt.html">DMXT</a><br></p> 
+                    </div>   
+
+                    <div class="col-lg-3 col-md-8">
+                        <h6 class="footer-title"><strong>CONTACT US</strong></h6>
+                            <p>NSPC No: # 121/1, 3rd Main Road,  
+                Between 10th & 11th Cross,<br>Margosa Road, Malleshwaram,
+                               Bangalore - 560003</p>
+                            <span class="glyphicon glyphicon-earphone"></span> Phone:080-40810638. <br>
+                            <a href="#"><span class="glyphicon glyphicon-envelope"></span> Email Id:chanrenspc@gmail.com</a>    
+                    </div> 
+
+                    <div class="col-lg-3 col-md-8">   
+                       <h6 class="footer-title"><strong>FOLLOW US ON</strong></h6> 
+                       <div class="container">
+                            <div class="row">
+                               <div class="col-lg-12">
+                               <a href="#" class="social_icons"><i class= "fa fa-facebook-square" style="font-size:25px; color:#fff;"></i> Face Book</a><br>
+                               <a href="#" class="social_icons"><i class="fa fa-twitter-square" style="font-size:25px; color:#fff;"></i> Twitter</a><br>
+                               <a href="#" class="social_icons"><i class="fa fa-youtube-square" style="font-size:25px; 
+                                 color:#fff;"></i> Youtube </a><br>
+                               <a href="#" class="social_icons"><i class="fa fa-google-plus-square" style="font-size:25px;
+                               color:#fff;"></i> Google Plus </a><br> 
+                               <a href="#" class="social_icons"><i class="fa fa-linkedin" style="font-size:25px; 
+                               color:#fff;"></i> Linked In </a><br>
+                               <a href="#" class="social_icons"><i class="fa fa-pinterest-square" style="font-size:25px;
+                               color:#fff;"></i> Pinterest </a> 
+                               </div> 
+                            </div>    
+                       </div>  
+                    </div>
+                </div>    
+             </div>   
+        </div>    
+    </div>    
+</section>
+<section class="footer_copyright copyright_area">   
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <p>Copyright &copy; 2019 NSPC Education of Paramedical Science College. All Rights Reserved by<span><a href="index.html"> www.nspcedu.com</a></span></p> 
+                 </div>   
+            </div>    
+        </div>        
+ </section>  
+
+<!--End of footer-->
+
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+
+    <!--Bootstrap4 multiple slide by slide and Dropdown menu-->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!--Slick slider Fade Zoom for courses-->
+    <script src="assets/slick-slider/slick.min.js"></script>    
+  
+    <!--All HTML are going to need in this post-->
+  <!--It’s important that you load the [jquery-2.1.0.min.js] jquery-3.4.1.file first as the code within app.js requires jQuery.-->
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>--> 
+  
+  </body>
+</html>
